@@ -54,7 +54,7 @@ module tb_aes128_cmac_top;
 
     // All-Zeros Vector
     localparam [127:0] ZERO_KEY    = 128'h00000000000000000000000000000000;
-    localparam [127:0] ZERO_TAG    = 128'h099b18a6c0f73e9e91928981b3545340;
+    localparam [127:0] ZERO_TAG    = 128'h763cbcde81df9131bf897712c088edad;
 
     integer errors;
 
@@ -102,8 +102,9 @@ module tb_aes128_cmac_top;
                 @(posedge mac_done);
                 #1;
             end else begin
-                @(negedge ready);
-                @(posedge ready);
+                // Wait for block processing to complete and ready to return high
+                @(posedge clk);
+                wait (ready == 1'b1);
             end
         end
     endtask

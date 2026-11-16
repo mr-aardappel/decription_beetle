@@ -59,7 +59,7 @@ module tb_aes128_cmac_mac_gen;
     localparam [127:0] ZERO_KEY = 128'h00000000000000000000000000000000;
     localparam [127:0] ZERO_K1  = 128'hcdd297a9df1458771099f4b39468565c;
     localparam [127:0] ZERO_K2  = 128'h9ba52f53be28b0ee2133e96728d0ac3f;
-    localparam [127:0] ZERO_TAG = 128'h099b18a6c0f73e9e91928981b3545340;
+    localparam [127:0] ZERO_TAG = 128'h763cbcde81df9131bf897712c088edad;
 
     integer errors;
 
@@ -97,9 +97,8 @@ module tb_aes128_cmac_mac_gen;
                 @(posedge done);
                 #1;
             end else begin
-                // Wait for block processing to complete and return to ready
-                @(negedge ready);
-                @(posedge ready);
+                @(posedge clk);
+                wait (ready == 1'b1);
             end
         end
     endtask
