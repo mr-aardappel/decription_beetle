@@ -76,6 +76,11 @@ module tb_aes128_ctr;
     endtask
 
     initial begin
+        $dumpfile("tb_aes128_ctr.vcd");
+        $dumpvars(0, tb_aes128_ctr);
+    end
+
+    initial begin
         // Initialize NIST plaintext & expected ciphertext blocks
         nist_pt[0] = 128'h6bc1bee22e409f96e93d7e117393172a;
         nist_pt[1] = 128'hae2d8a571e03ac9c9eb76fac45af8e51;
