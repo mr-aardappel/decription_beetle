@@ -1,0 +1,226 @@
+$date
+	Mon Nov  9 13:52:02 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_SubBytes $end
+$var wire 128 ! state_out [127:0] $end
+$var reg 128 " state_in [127:0] $end
+$scope module uut $end
+$var wire 128 # state_in [127:0] $end
+$var wire 128 $ state_out [127:0] $end
+$scope begin sbox_array[0] $end
+$var parameter 2 % i $end
+$scope module sbox_inst $end
+$var wire 8 & in_byte [7:0] $end
+$var reg 8 ' out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[1] $end
+$var parameter 2 ( i $end
+$scope module sbox_inst $end
+$var wire 8 ) in_byte [7:0] $end
+$var reg 8 * out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[2] $end
+$var parameter 3 + i $end
+$scope module sbox_inst $end
+$var wire 8 , in_byte [7:0] $end
+$var reg 8 - out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[3] $end
+$var parameter 3 . i $end
+$scope module sbox_inst $end
+$var wire 8 / in_byte [7:0] $end
+$var reg 8 0 out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[4] $end
+$var parameter 4 1 i $end
+$scope module sbox_inst $end
+$var wire 8 2 in_byte [7:0] $end
+$var reg 8 3 out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[5] $end
+$var parameter 4 4 i $end
+$scope module sbox_inst $end
+$var wire 8 5 in_byte [7:0] $end
+$var reg 8 6 out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[6] $end
+$var parameter 4 7 i $end
+$scope module sbox_inst $end
+$var wire 8 8 in_byte [7:0] $end
+$var reg 8 9 out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[7] $end
+$var parameter 4 : i $end
+$scope module sbox_inst $end
+$var wire 8 ; in_byte [7:0] $end
+$var reg 8 < out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[8] $end
+$var parameter 5 = i $end
+$scope module sbox_inst $end
+$var wire 8 > in_byte [7:0] $end
+$var reg 8 ? out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[9] $end
+$var parameter 5 @ i $end
+$scope module sbox_inst $end
+$var wire 8 A in_byte [7:0] $end
+$var reg 8 B out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[10] $end
+$var parameter 5 C i $end
+$scope module sbox_inst $end
+$var wire 8 D in_byte [7:0] $end
+$var reg 8 E out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[11] $end
+$var parameter 5 F i $end
+$scope module sbox_inst $end
+$var wire 8 G in_byte [7:0] $end
+$var reg 8 H out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[12] $end
+$var parameter 5 I i $end
+$scope module sbox_inst $end
+$var wire 8 J in_byte [7:0] $end
+$var reg 8 K out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[13] $end
+$var parameter 5 L i $end
+$scope module sbox_inst $end
+$var wire 8 M in_byte [7:0] $end
+$var reg 8 N out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[14] $end
+$var parameter 5 O i $end
+$scope module sbox_inst $end
+$var wire 8 P in_byte [7:0] $end
+$var reg 8 Q out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin sbox_array[15] $end
+$var parameter 5 R i $end
+$scope module sbox_inst $end
+$var wire 8 S in_byte [7:0] $end
+$var reg 8 T out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111 R
+b1110 O
+b1101 L
+b1100 I
+b1011 F
+b1010 C
+b1001 @
+b1000 =
+b111 :
+b110 7
+b101 4
+b100 1
+b11 .
+b10 +
+b1 (
+b0 %
+$end
+#0
+$dumpvars
+b110000 T
+b1000 S
+b1010010 Q
+b1001000 P
+b1000001 N
+b11111000 M
+b11110 K
+b11101001 J
+b11100101 H
+b101010 G
+b1011101 E
+b10001101 D
+b10110100 B
+b11000110 A
+b10111000 ?
+b10011010 >
+b11110001 <
+b101011 ;
+b10011000 9
+b11100010 8
+b10111111 6
+b11110100 5
+b11100000 3
+b10100000 2
+b10101110 0
+b10111110 /
+b10001 -
+b11100011 ,
+b100111 *
+b111101 )
+b11010100 '
+b11001 &
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 $
+b11001001111011110001110111110101000001111010011100010001010111001101011000110100011010010101011101001111110000100100000001000 #
+b11001001111011110001110111110101000001111010011100010001010111001101011000110100011010010101011101001111110000100100000001000 "
+b11010100001001110001000110101110111000001011111110011000111100011011100010110100010111011110010100011110010000010101001000110000 !
+$end
+#10000
+b1100011 '
+b1100011 *
+b1100011 -
+b1100011 0
+b1100011 3
+b1100011 6
+b1100011 9
+b1100011 <
+b1100011 ?
+b1100011 B
+b1100011 E
+b1100011 H
+b1100011 K
+b1100011 N
+b1100011 Q
+b1100011011000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100011 !
+b1100011011000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100011 $
+b1100011 T
+b0 &
+b0 )
+b0 ,
+b0 /
+b0 2
+b0 5
+b0 8
+b0 ;
+b0 >
+b0 A
+b0 D
+b0 G
+b0 J
+b0 M
+b0 P
+b0 S
+b0 "
+b0 #
+#20000

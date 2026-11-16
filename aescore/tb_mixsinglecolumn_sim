@@ -1,0 +1,141 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x5bb852ee7e90 .scope module, "tb_MixSingleColumn" "tb_MixSingleColumn" 2 3;
+ .timescale -9 -12;
+v0x5bb852f149e0_0 .var "col_in", 31 0;
+v0x5bb852f14aa0_0 .net "col_out", 31 0, L_0x5bb852f16540;  1 drivers
+S_0x5bb852ef51f0 .scope module, "uut" "MixSingleColumn" 2 12, 3 4 0, S_0x5bb852ee7e90;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "col_in";
+    .port_info 1 /OUTPUT 32 "col_out";
+L_0x5bb852f14ff0 .functor XOR 8, L_0x5bb852f14ec0, L_0x5bb852f14be0, C4<00000000>, C4<00000000>;
+L_0x5bb852f150b0 .functor XOR 8, L_0x5bb852f14df0, L_0x5bb852f14ff0, C4<00000000>, C4<00000000>;
+L_0x5bb852f151c0 .functor XOR 8, L_0x5bb852f150b0, L_0x5bb852f14c80, C4<00000000>, C4<00000000>;
+L_0x5bb852f152d0 .functor XOR 8, L_0x5bb852f151c0, L_0x5bb852f14d20, C4<00000000>, C4<00000000>;
+L_0x5bb852f15540 .functor XOR 8, L_0x5bb852f14b40, L_0x5bb852f15410, C4<00000000>, C4<00000000>;
+L_0x5bb852f156a0 .functor XOR 8, L_0x5bb852f155b0, L_0x5bb852f14c80, C4<00000000>, C4<00000000>;
+L_0x5bb852f15830 .functor XOR 8, L_0x5bb852f15540, L_0x5bb852f156a0, C4<00000000>, C4<00000000>;
+L_0x5bb852f158f0 .functor XOR 8, L_0x5bb852f15830, L_0x5bb852f14d20, C4<00000000>, C4<00000000>;
+L_0x5bb852f15a00 .functor XOR 8, L_0x5bb852f14b40, L_0x5bb852f14be0, C4<00000000>, C4<00000000>;
+L_0x5bb852f15ba0 .functor XOR 8, L_0x5bb852f15a00, L_0x5bb852f15b00, C4<00000000>, C4<00000000>;
+L_0x5bb852f15e50 .functor XOR 8, L_0x5bb852f15cc0, L_0x5bb852f14d20, C4<00000000>, C4<00000000>;
+L_0x5bb852f15ec0 .functor XOR 8, L_0x5bb852f15ba0, L_0x5bb852f15e50, C4<00000000>, C4<00000000>;
+L_0x5bb852f16040 .functor XOR 8, L_0x5bb852f15fa0, L_0x5bb852f14b40, C4<00000000>, C4<00000000>;
+L_0x5bb852f16100 .functor XOR 8, L_0x5bb852f16040, L_0x5bb852f14be0, C4<00000000>, C4<00000000>;
+L_0x5bb852f15f30 .functor XOR 8, L_0x5bb852f16100, L_0x5bb852f14c80, C4<00000000>, C4<00000000>;
+L_0x5bb852f163a0 .functor XOR 8, L_0x5bb852f15f30, L_0x5bb852f16290, C4<00000000>, C4<00000000>;
+v0x5bb852f12ef0_0 .net *"_ivl_11", 7 0, L_0x5bb852f14ec0;  1 drivers
+v0x5bb852f12ff0_0 .net *"_ivl_12", 7 0, L_0x5bb852f14ff0;  1 drivers
+v0x5bb852f130d0_0 .net *"_ivl_14", 7 0, L_0x5bb852f150b0;  1 drivers
+v0x5bb852f13190_0 .net *"_ivl_16", 7 0, L_0x5bb852f151c0;  1 drivers
+v0x5bb852f13270_0 .net *"_ivl_21", 7 0, L_0x5bb852f15410;  1 drivers
+v0x5bb852f133a0_0 .net *"_ivl_22", 7 0, L_0x5bb852f15540;  1 drivers
+v0x5bb852f13480_0 .net *"_ivl_25", 7 0, L_0x5bb852f155b0;  1 drivers
+v0x5bb852f13560_0 .net *"_ivl_26", 7 0, L_0x5bb852f156a0;  1 drivers
+v0x5bb852f13640_0 .net *"_ivl_28", 7 0, L_0x5bb852f15830;  1 drivers
+v0x5bb852f13720_0 .net *"_ivl_32", 7 0, L_0x5bb852f15a00;  1 drivers
+v0x5bb852f13800_0 .net *"_ivl_35", 7 0, L_0x5bb852f15b00;  1 drivers
+v0x5bb852f138e0_0 .net *"_ivl_36", 7 0, L_0x5bb852f15ba0;  1 drivers
+v0x5bb852f139c0_0 .net *"_ivl_39", 7 0, L_0x5bb852f15cc0;  1 drivers
+v0x5bb852f13aa0_0 .net *"_ivl_40", 7 0, L_0x5bb852f15e50;  1 drivers
+v0x5bb852f13b80_0 .net *"_ivl_45", 7 0, L_0x5bb852f15fa0;  1 drivers
+v0x5bb852f13c60_0 .net *"_ivl_46", 7 0, L_0x5bb852f16040;  1 drivers
+v0x5bb852f13d40_0 .net *"_ivl_48", 7 0, L_0x5bb852f16100;  1 drivers
+v0x5bb852f13e20_0 .net *"_ivl_50", 7 0, L_0x5bb852f15f30;  1 drivers
+v0x5bb852f13f00_0 .net *"_ivl_53", 7 0, L_0x5bb852f16290;  1 drivers
+v0x5bb852f13fe0_0 .net *"_ivl_9", 7 0, L_0x5bb852f14df0;  1 drivers
+v0x5bb852f140c0_0 .net "col_in", 31 0, v0x5bb852f149e0_0;  1 drivers
+v0x5bb852f141a0_0 .net "col_out", 31 0, L_0x5bb852f16540;  alias, 1 drivers
+v0x5bb852f14280_0 .net "s0", 7 0, L_0x5bb852f14b40;  1 drivers
+v0x5bb852f14360_0 .net "s0_prime", 7 0, L_0x5bb852f152d0;  1 drivers
+v0x5bb852f14440_0 .net "s1", 7 0, L_0x5bb852f14be0;  1 drivers
+v0x5bb852f14520_0 .net "s1_prime", 7 0, L_0x5bb852f158f0;  1 drivers
+v0x5bb852f14600_0 .net "s2", 7 0, L_0x5bb852f14c80;  1 drivers
+v0x5bb852f146e0_0 .net "s2_prime", 7 0, L_0x5bb852f15ec0;  1 drivers
+v0x5bb852f147c0_0 .net "s3", 7 0, L_0x5bb852f14d20;  1 drivers
+v0x5bb852f148a0_0 .net "s3_prime", 7 0, L_0x5bb852f163a0;  1 drivers
+L_0x5bb852f14b40 .part v0x5bb852f149e0_0, 24, 8;
+L_0x5bb852f14be0 .part v0x5bb852f149e0_0, 16, 8;
+L_0x5bb852f14c80 .part v0x5bb852f149e0_0, 8, 8;
+L_0x5bb852f14d20 .part v0x5bb852f149e0_0, 0, 8;
+L_0x5bb852f14df0 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14b40 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f14ec0 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14be0 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f15410 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14be0 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f155b0 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14c80 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f15b00 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14c80 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f15cc0 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14d20 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f15fa0 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14b40 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f16290 .ufunc/vec4 TD_tb_MixSingleColumn.uut.xTimes, 8, L_0x5bb852f14d20 (v0x5bb852ef55b0_0) S_0x5bb852ef53d0;
+L_0x5bb852f16540 .concat [ 8 8 8 8], L_0x5bb852f163a0, L_0x5bb852f15ec0, L_0x5bb852f158f0, L_0x5bb852f152d0;
+S_0x5bb852ef53d0 .scope autofunction.vec4.s8, "xTimes" "xTimes" 3 19, 3 19 0, S_0x5bb852ef51f0;
+ .timescale 0 0;
+v0x5bb852ef55b0_0 .var "b", 7 0;
+; Variable xTimes is vec4 return value of scope S_0x5bb852ef53d0
+TD_tb_MixSingleColumn.uut.xTimes ;
+    %load/vec4 v0x5bb852ef55b0_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %shiftl 4;
+    %load/vec4 v0x5bb852ef55b0_0;
+    %parti/s 1, 7, 4;
+    %flag_set/vec4 8;
+    %jmp/0 T_0.0, 8;
+    %pushi/vec4 27, 0, 8;
+    %jmp/1 T_0.1, 8;
+T_0.0 ; End of true expr.
+    %pushi/vec4 0, 0, 8;
+    %jmp/0 T_0.1, 8;
+ ; End of false expr.
+    %blend;
+T_0.1;
+    %xor;
+    %ret/vec4 0, 0, 8;  Assign to xTimes (store_vec4_to_lval)
+    %end;
+    .scope S_0x5bb852ee7e90;
+T_1 ;
+    %vpi_call 2 19 "$dumpfile", "tb_mixsinglecolumn.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x5bb852ee7e90 {0 0 0};
+    %vpi_call 2 22 "$display", "Starting MixSingleColumn Testbench..." {0 0 0};
+    %pushi/vec4 3569311024, 0, 32;
+    %store/vec4 v0x5bb852f149e0_0, 0, 32;
+    %delay 10000, 0;
+    %load/vec4 v0x5bb852f14aa0_0;
+    %cmpi/e 73826789, 0, 32;
+    %jmp/0xz  T_1.0, 6;
+    %vpi_call 2 29 "$display", "PASS: NIST Round 1, Column 0" {0 0 0};
+    %jmp T_1.1;
+T_1.0 ;
+    %vpi_call 2 31 "$display", "FAIL: NIST Round 1, Column 0" {0 0 0};
+    %vpi_call 2 32 "$display", "Expected: 046681e5" {0 0 0};
+    %vpi_call 2 33 "$display", "Got:      %h", v0x5bb852f14aa0_0 {0 0 0};
+T_1.1 ;
+    %pushi/vec4 3769914030, 0, 32;
+    %store/vec4 v0x5bb852f149e0_0, 0, 32;
+    %delay 10000, 0;
+    %load/vec4 v0x5bb852f14aa0_0;
+    %cmpi/e 3771406746, 0, 32;
+    %jmp/0xz  T_1.2, 6;
+    %vpi_call 2 41 "$display", "PASS: NIST Round 1, Column 1" {0 0 0};
+    %jmp T_1.3;
+T_1.2 ;
+    %vpi_call 2 43 "$display", "FAIL: NIST Round 1, Column 1" {0 0 0};
+    %vpi_call 2 44 "$display", "Expected: e0cb199a" {0 0 0};
+    %vpi_call 2 45 "$display", "Got:      %h", v0x5bb852f14aa0_0 {0 0 0};
+T_1.3 ;
+    %vpi_call 2 48 "$display", "MixSingleColumn tests completed." {0 0 0};
+    %vpi_call 2 49 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_mixsinglecolumn.v";
+    "MixSingleColumn.v";

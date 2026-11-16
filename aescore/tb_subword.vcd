@@ -1,0 +1,64 @@
+$date
+	Mon Nov  9 13:50:38 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_SubWord $end
+$var wire 32 ! out_word [31:0] $end
+$var reg 32 " in_word [31:0] $end
+$scope module uut $end
+$var wire 32 # in_word [31:0] $end
+$var wire 32 $ out_word [31:0] $end
+$scope module sbox_0 $end
+$var wire 8 % in_byte [7:0] $end
+$var reg 8 & out_byte [7:0] $end
+$upscope $end
+$scope module sbox_1 $end
+$var wire 8 ' in_byte [7:0] $end
+$var reg 8 ( out_byte [7:0] $end
+$upscope $end
+$scope module sbox_2 $end
+$var wire 8 ) in_byte [7:0] $end
+$var reg 8 * out_byte [7:0] $end
+$upscope $end
+$scope module sbox_3 $end
+$var wire 8 + in_byte [7:0] $end
+$var reg 8 , out_byte [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10110 ,
+b11111111 +
+b11101101 *
+b1010011 )
+b1111100 (
+b1 '
+b1100011 &
+b0 %
+b1100011011111001110110100010110 $
+b10101001111111111 #
+b10101001111111111 "
+b1100011011111001110110100010110 !
+$end
+#10000
+b1100011 (
+b1100011 *
+b1100011011000110110001101100011 !
+b1100011011000110110001101100011 $
+b1100011 ,
+b0 '
+b0 )
+b0 +
+b0 "
+b0 #
+#20000
